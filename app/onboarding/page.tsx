@@ -111,14 +111,14 @@ export default function Onboarding() {
   }, [currentStep]);
 
   return (
-    <div className="flex flex-col px-4 py-3 md:px-8 md:py-8 min-h-screen bg-black text-white">
+    <div className="flex flex-col px-4 py-3 md:px-8 md:py-8 supports-[height:100cqh]:h-[100cqh] supports-[height:100svh]:h-[100svh] bg-black text-white">
       <Header
         onBackClick={handleBackClick}
         onRefreshClick={handleRefreshClick}
       />
 
       <main className="flex flex-col flex-grow">
-        <div className="flex flex-col items-center text-center mb-auto">
+        <div className="flex flex-col items-center text-center">
           <Lottie
             loop
             animationData={hexaAnimation}
@@ -136,7 +136,7 @@ export default function Onboarding() {
             )}
           </div>
         </div>
-        <div className="w-full max-w-[500px] mx-auto mt-auto mb-5">
+        <div className="w-full max-w-[500px] mx-auto mb-5 mt-[50vh] transform -translate-y-1/2">
           {currentStep < steps.length ? (
             <div className="relative">
               <input
