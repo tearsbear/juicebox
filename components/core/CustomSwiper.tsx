@@ -43,7 +43,7 @@ const CustomSwiper: React.FC<CustomSwiperProps> = ({
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index} className="flex flex-col h-full">
-          <div className="mb-12 text-xl font-sohne max-w-[350px] md:max-w-[420px] mx-auto flex-grow">
+          <div className="mb-12 text-xl font-sohne max-w-[300px] md:max-w-[420px] mx-auto flex-grow">
             {activeIndex === index && (
               <AnimatedText
                 key={`${index}-${animationKey}`}

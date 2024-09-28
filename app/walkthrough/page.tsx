@@ -11,15 +11,15 @@ import Header from "@/components/core/Header";
 
 const slides = [
   {
+    text: "Professionals around the world shared how they feel about technology and I've listened. Now it's your turn.",
+    buttonText: "Continue",
+  },
+  {
     text: "I'll ask you a handful of meaningful questions and compare your responses with people in your industry.",
     buttonText: "Continue",
   },
   {
-    text: "You'll get insights into current industry sentiments and a reality check about technology in a few minutes.",
-    buttonText: "Continue",
-  },
-  {
-    text: "Ready to dive in? Let's explore how your views align with industry trends.",
+    text: "You'll get insights into current industry sentiments and a reality check about technology in a few minutes. Deal? Great!",
     buttonText: "Get started",
   },
 ];
