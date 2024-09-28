@@ -60,7 +60,7 @@ export default function Walkthrough() {
       <main className="flex flex-col items-center text-center flex-grow relative w-full">
         <div className="relative w-[146px] h-[155px] mb-5 md:mb-10 z-10 float-animation">
           <Image
-            src="/images/vector/hexagon-alt.svg"
+            src="/images/vector/hexa.png"
             alt="Hexagon illustration"
             layout="fill"
             objectFit="contain"
