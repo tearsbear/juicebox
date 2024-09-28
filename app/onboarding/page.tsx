@@ -42,8 +42,8 @@ const steps: Step[] = [
 export default function Onboarding() {
   const [showAlert, setShowAlert] = useState(false);
   const [firstName, setFirstName] = useState("");
-  // @ts-ignore
-  const [email, setEmail] = useState("");
+  // Remove this line:
+  // const [email, setEmail] = useState("");
   const [currentStep, setCurrentStep] = useState(1);
   const [showMaxLengthAlert, setShowMaxLengthAlert] = useState(false);
   const [showSuccessAlert, setShowSuccessAlert] = useState(false);
@@ -85,9 +85,11 @@ export default function Onboarding() {
     setInputs(newInputs);
     if (currentStep === 1) {
       setFirstName(value);
-    } else if (currentStep === 2) {
-      setEmail(value);
     }
+    // Remove this else-if block:
+    // else if (currentStep === 2) {
+    //   setEmail(value);
+    // }
   };
 
   useEffect(() => {
